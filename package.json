@@ -1,0 +1,29 @@
+{
+  "name": "type-challenges",
+  "version": "1.0.0",
+  "description": "ts 体操",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "build:w": "tsc -w",
+    "test": "tsd",
+    "subject": "node ./cli/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@type-challenges/utils": "^0.1.1",
+    "tsd": "^0.13.1"
+  },
+  "tsd": {
+    "directory": "test-dts",
+    "compilerOptions": {
+      "strict": false,
+      "lib": [
+        "esnext",
+        "dom"
+      ]
+    }
+  }
+}
