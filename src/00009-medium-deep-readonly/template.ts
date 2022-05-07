@@ -1,5 +1,5 @@
-type Diff = string | boolean | number | bigint | symbol | null | undefined | Function
+type DeepReadonlyDiff = string | boolean | number | bigint | symbol | null | undefined | Function
 
-type DeepReadonly<T> = T extends Diff ? T : {
+type DeepReadonly<T> = T extends DeepReadonlyDiff ? T : {
     readonly [K in keyof T]: DeepReadonly<T[K]>
 }
